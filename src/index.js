@@ -29,7 +29,9 @@ function renderByConditions(countries) {
     Notiflix.Notify.info(
       'Too many matches found. Please enter a more specific name.'
     );
-    return [];
+    refs.countryList.innerHTML = '';
+    refs.countryInfo.innerHTML = '';
+    // return [];
   }
 
   if (countries.length <= 10 && countries.length > 1) {
